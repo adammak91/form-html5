@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularz</title>
+</head>
+
+<body>
+  <form action="https://formspree.io/f/mqknpvkn" method="POST">
+    <label for="fname">Imie</label>
+    <input type="text" id="fname" name="Imie" required><br>
+    <label for="secondname">Nazwisko</label>
+    <input type="text" id="secondname" name="Nazwisko" required><br>
+    <label for="email">email</label>
+    <input type="email" id="email" name="email" placeholder="podaj adres email"><br>
+    <label for="phone">Telefon</label>
+    <input type="tel" id="phone" name="phone" placeholder="wpisz swoj numer telefonu"><br>
+
+    <div>Wybor miasta</div>
+    <select name="city">
+
+      <option value="Krakow">Krakow</option>
+      <option value="Warszawa">Warszawa</option>
+      <option value="Poznan" selected>Poznan</option>
+    </select><br>
+
+    <label><input type="radio" name="choise">Mezczyzna</label><br>
+    <label><input type="radio" name="choise">Kobieta</label><br>
+    <label><input type="radio" name="choise">Inne</label><br>
+
+    <label><input type="checkbox" name="agreement">Wyrazam zgode na przetwarzanie moich danych</label><br>
+
+    <textarea name="messege" maxlength="100" placeholder="prosze wpisac max 100znakow"></textarea><br>
+    <input type="submit" value="wyslij Formularz"><br>
+
+  </form>
+
+</body>
+
+</html>
